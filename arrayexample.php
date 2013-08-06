@@ -3,9 +3,10 @@
 
   $record = array('first_name' => 'eliezer', 'last_name' => 'kops');
 
-   
+   $record = array_flip($record); 
 
   $records = array();
+  
  
   $records[] = $record;
   $record['first_name'] = 'tzvi';
@@ -23,6 +24,7 @@
   $record['last_name'] = 'fischman';
   $records[] = $record;
  
+    
 
    print_r($records);
 
